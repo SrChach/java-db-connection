@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>  
+<html>
+<head>
+  <title>Listado de campos</title>
+  <link rel="stylesheet" href="estilo.css" type="text/css"/>
+</head>
+<body>
+	<!-- Construcción del formulario con los campos para mandar a backend 
+            "method" es el método por el que se recibirá en backend
+            "action" es el nombre del Servlet que se ejecutará con este formulario
+        -->
+        <form method="post" action="DatosTabla">
+		<table>
+			<tr>
+				<td>Codigo</td>
+				<td>Nombre</td>	
+			</tr>
+			<tr>
+                                <!-- los "name" de los input deben coincidir con los nombres cachados en back -->
+				<td><input type="text" name="id"></td>
+				<td><input type="text" name="campo1"></td>
+				<td><input type="submit" name="buscar" value="buscar"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
